@@ -31,3 +31,11 @@ a{
 figure, img{
     max-width: 100%;
 }
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+header, .limitador{
+    
+}
