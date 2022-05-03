@@ -52,10 +52,13 @@ nav h2{
     text-align: right;
 }
 .icone{
-    background-color: tomato;
     font-size: 1.2rem;
     padding: 1rem;
     display: inline-block;
+    color: black;
+}
+h2 a{
+    
 }
 .menu{
     list-style: none;
