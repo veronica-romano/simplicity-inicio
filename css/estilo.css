@@ -7,7 +7,6 @@ html{
 body, h1, h2, h3, p, figure{
     margin: 0;
     padding: 0;
-    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1, nav{
@@ -92,5 +91,7 @@ h2 a{
     color: white;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
