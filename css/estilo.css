@@ -115,4 +115,13 @@ h2 a {
 }
 .destaque h2{
     font-size: clamp(2rem, 8vw, 7rem);
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+.destaque p{
+    font-size: clamp(1.6rem, 2vw, 4rem);
+}
+
+@keyframes fadeIn {
+    
 }
