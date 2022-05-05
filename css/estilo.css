@@ -86,8 +86,11 @@ h2 a{
     right: 0;
     left: 0;
 }
-
 .destaque{
     background-image: url(../imagens/fundo-destaque.jpg);
     height: 90vh;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
 }
