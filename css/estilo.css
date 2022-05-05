@@ -120,8 +120,11 @@ h2 a {
 }
 .destaque p{
     font-size: clamp(1.6rem, 2vw, 4rem);
+    animation: fadeIn 1.5s 1s backwards;
+   
 }
 
 @keyframes fadeIn {
-    
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
