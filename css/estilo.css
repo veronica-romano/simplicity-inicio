@@ -87,3 +87,7 @@ h2 a{
     left: 0;
 }
 
+.destaque{
+    background-image: url(../imagens/fundo-destaque.jpg);
+    
+}
