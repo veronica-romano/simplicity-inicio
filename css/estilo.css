@@ -89,5 +89,5 @@ h2 a{
 
 .destaque{
     background-image: url(../imagens/fundo-destaque.jpg);
-    
+    height: 90vh;
 }
