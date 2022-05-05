@@ -131,4 +131,28 @@ h2 a {
 
 .front-end{
     text-align: center;
+    justify-content: center;
+}
+
+section h2{
+    padding: 1rem;
+    text-align: center;
+}
+
+section h2{
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+figure{
+    text-align: center;
+    margin: 1rem 0;
+}
+.historia{
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: white;
 }
