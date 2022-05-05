@@ -1,72 +1,87 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-html{
+/* Ajuste do Box Model pra TUDO */
+*, *::after, *::before { box-sizing: border-box; }
+
+/* Tornando as imagens responsivas */
+img { max-width: 100%; }
+
+html {
     font-size: 14px;
 }
-body, h1, h2, h3, p, figure{
+
+body, h1, h2, h3, p, figure {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h1, nav{
-    text-transform: uppercase;
-}
-h1{
+
+a { text-decoration: none; }
+
+h1, nav { text-transform: uppercase; }
+
+h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
     font-size: 1.5rem;
 }
-h1 a{
+
+h1 a {
     color: white;
-    background: black;
+    background-color: black;
     padding: 0.3rem 1rem;
     border-radius: 5px;
 }
-a{
-    text-decoration: none;
-}
-figure, img{
-    max-width: 100%;
-}
-header{
-    background-color: white;
+
+header {
+    background-color: #fff;
     position: sticky;
     top: 0;
 }
-header .limitador{
+
+header .limitador {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.limitador{
+
+.limitador {
     max-width: 1100px;
     width: 95vw;
     margin: auto;
 }
-nav{
-    width: 65%;
-}
-nav h2{
-    text-align: right;
-}
-.icone{
-    font-size: 1.2rem;
-    padding: 1rem;
-    display: inline-block;
-    
-}
-h2 a{
-    color: black;
-}
-.menu{
+
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: none;
 }
 
-.menu a{
+nav {
+    width: 65%;
+}
+
+nav h2 {
+    text-align: right;
+}
+
+.icone {
+    font-size: 1.2rem;
+    padding: 1rem;
+    height: 50px;
+    display: inline-block;
+}
+
+h2 a {
+    color: black;
+}
+
+
+.menu a { /* ou: nav li a  */
     color: black;
     font-weight: bold;
     background-color: white;
@@ -75,11 +90,13 @@ h2 a{
     height: 50px;
     align-items: center;
 }
-.menu a:hover, .menu a:active{
-    background-color: gainsboro;
 
+.menu a:hover, .menu a:active {
+    background-color: gainsboro;
 }
-.menu-aberto{
+
+/* Esta classe será manipulada via JS */
+.menu-aberto {
     display: block;
     position: absolute;
     right: 0;
