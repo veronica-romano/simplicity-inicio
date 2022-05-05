@@ -128,3 +128,7 @@ h2 a {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+.front-end{
+    text-align: center;
+}
