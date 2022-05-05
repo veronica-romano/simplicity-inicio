@@ -97,5 +97,5 @@ h2 a{
     text-align: center;
 }
 .destaque h2{
-    font-size: clamp(1.5em, 2em, 3em);
+    font-size: clamp(2rem, 8vw, 7rem);
 }
