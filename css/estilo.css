@@ -94,4 +94,8 @@ h2 a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.destaque h2{
+    font-size: clamp(1.5em, 2em, 3em);
 }
