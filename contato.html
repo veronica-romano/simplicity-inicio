@@ -273,7 +273,11 @@ $("#cep").blur(function() {
         const bcaracteres = $("#caracteres");
         const textMensagem = $("#mensagem");
         let quantidade = 100;
-        
+        textMensagem.on("input", function(){
+            let conteudo = textMensagem.val();
+            let contagem = quantidade - conteudo.length;
+            console.log(contagem);
+        });
     </script>
 </body>
 </html>
