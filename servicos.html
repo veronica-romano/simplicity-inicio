@@ -12,6 +12,8 @@
     <meta name="keywords" content="servicos, front-end, html, css, js">
     <!-- CSS Externo-->
     <link rel="stylesheet" href="css/estilo.css">
+    <!-- CSS do lightbox-->
+    <link rel="stylesheet" href="plugins/lightbox/css/lightbox.css">
 </head>
 <body>
     <!-- Iniciando área de cabeçalho -->
@@ -44,9 +46,9 @@
             <p>Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi.</p>
 
             <figure>
-                <a href="imagens/desenvolvimento-web.jpg" title="web design"><img src="imagens/desenvolvimento-web-mini.jpg" alt="web design"></a>
+                <a href="imagens/desenvolvimento-web.jpg" title="web design" data-lightbox="galeria" data-title="desenvolvimento web"><img src="imagens/desenvolvimento-web-mini.jpg" alt="web design"></a>
 
-                <a href="imagens/design-grafico.jpg" title="design gráfico"><img src="imagens/design-grafico-mini.jpg" alt="design gráfico"></a>
+                <a href="imagens/design-grafico.jpg" title="design gráfico" data-lightbox="galeria" data-title="design grafico"><img src="imagens/design-grafico-mini.jpg" alt="design gráfico"></a>
 
                 <a href="imagens/marketing-digital.jpg" title="mkt digital"><img src="imagens/marketing-digital-mini.jpg" alt="marketing digital"></a>
 
@@ -59,6 +61,9 @@
         <p>Simplicity é um site fictício desenvolvido no Senac Penha &copy; - Alguns Direitos Reservados - 2022</p>
     </footer>
     <script src="js/menu.js"></script>
+    <!-- Importando plugin lightbox -->
+    <script src="plugins/lightbox/js/jquery-1.11.0.min.js"></script>
+    <script src="plugins/lightbox/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
 
