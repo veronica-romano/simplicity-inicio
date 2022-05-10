@@ -177,6 +177,16 @@ th, td{
 td:nth-child(1){
     text-transform: uppercase;
 }
+td:nth-child(2){
+    text-align: center;
+}
+td:nth-child(3){
+    color: blue;
+}
+caption{
+    font-weight: bold;
+    font-size: 1.2 rem;
+}
 /* ------------------------------------------------------------- */
 /* Media queries */
 @media screen and (min-width: 600px) {
