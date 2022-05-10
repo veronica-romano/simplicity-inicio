@@ -63,6 +63,7 @@ header .limitador {
 
 nav {
     width: 65%;
+    /* background: tomato; */
 }
 
 nav h2 {
@@ -102,57 +103,132 @@ h2 a {
     right: 0;
     left: 0;
 }
-.destaque{
+
+
+
+/* Section com a classe destaque */
+.destaque {
     background-image: url(../imagens/fundo-destaque.jpg);
     height: 90vh;
     color: white;
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
-.destaque h2{
-    font-size: clamp(2rem, 8vw, 7rem);
+
+.destaque h2 {
+    font-size: clamp(2rem, 8vw, 7rem);  /* clamp(min, ideal, max); */
     animation-name: fadeIn;
     animation-duration: 1.5s;
 }
-.destaque p{
-    font-size: clamp(1.6rem, 2vw, 4rem);
+
+.destaque p {
+    font-size: clamp(1.6rem, 2vw, 4rem);  /* clamp(min, ideal, max); */
     animation: fadeIn 1.5s 1s backwards;
-   
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
 
-.front-end{
+
+.front-end, .localizacao {
     text-align: center;
-    justify-content: center;
 }
 
-section h2{
+section h2 {
+    text-align: center;
     padding: 1rem;
-    text-align: center;
 }
 
-section h2{
+section p {
     padding: 0.5rem 0;
-    text-align: center;
 }
 
-figure{
+figure {
     text-align: center;
     margin: 1rem 0;
 }
-.historia{
+
+
+.historia {
     background-image: url(../imagens/fundo-madeira.jpg);
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
     padding-bottom: 1rem;
-    color: white;
 }
+
+.historia h2 {
+    color: #fff;
+    text-shadow: black 1px 1px 2px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+.historia iframe { 
+    max-width: 800px; 
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    height: 14vh;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+    .icone { 
+        display:  none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .menu a {
+        padding: 0 1rem;
+    }
+
+}
+
+/* código que será interpretado apenas em telas 800px + */
+@media screen and (min-width: 800px) {
+    html { 
+        font-size: 18px;
+    }
+    header .limitador {
+         height: 15vh; 
+    }
+    
+    .destaque { 
+        height: 85vh; 
+    }
+}
+
+
+
+

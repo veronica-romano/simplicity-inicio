@@ -21,7 +21,7 @@ Lista Menu
 
 Desenvolvedor Front-End
 
- <h2>Desenvolvedor Front-End</h2>
+            <h2>Desenvolvedor Front-End</h2>
             <p>O desenvolvedor Front-End é o profissional que cuida da parte de código que é interpretada diretamente pelo <i>browser</i>. </p>
             <p>No desenvolvimento por camadas, 
             <abbr title="HyperText Markup Language">HTML</abbr> é responsável por estruturar o conteúdo, 

@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <meta name="description" content="Simplicity é a maneira mais fácil de entrar no mundo do desenvolvimento Frontend">
-    <meta name="keywords" content="frontend, html, css, js">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <title>Simplicity - A porta de entrada para o desenvolvimento web</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!-- Meta -->
+    <meta name="description" content="Simplicity é a maneira mais fácil de você entrar no mundo do desenvolvimento front end.">
+    <meta name="keywords" content="front-end, html, css, js">
+
+    <!-- CSS Externo-->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <!-- Iniciando área de cabeçalho -->
     <header>
         <div class="limitador">
-            <h1><a href="index.html" title="página inicial Simplicity">Simplicity</a></h1>
+            <!-- Logotipo -->
+            <h1><a href="index.html" title="Página Inicial Simplicity">Simplicity</a></h1>
+
+            
+
+            <!-- Menu que aparece ao clicar no botão ou em telas maiores -->
             <nav>
-                <h2><a href="" title="" class="icone">Menu &equiv;</a></h2>
+                <!-- Menu que só aparece em telas pequenas -->
+                <h2><a href="" title="abre menu de navegação" class="icone">Menu &equiv;</a></h2>
                 <ul class="menu">
                     <li><a href="index.html" title="página inicial">Home</a></li>
                     <li><a href="produtos.html" title="conheça nossos produtos">Produtos</a></li>
@@ -25,17 +38,24 @@
             </nav>
         </div>
     </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Área de conteúdo principal  -->
     <main>
         <section class="destaque">
-               <div>
+            <div>
                 <h2>HTML5 e CSS3</h2>
                 <p>A porta de entrada para o desenvolvimento web.</p>
-               </div>
+            </div>
         </section>
 
+        <!-- SLIDER -->
         <section class="slider">
 
         </section>
+
+
+        <!-- Área de conteúdo de texto + 3 imagens -->
         <section class="limitador front-end">
             <h2>Desenvolvedor Front-End</h2>
             <p>O desenvolvedor Front-End é o profissional que cuida da parte de código que é interpretada diretamente pelo <i>browser</i>. </p>
@@ -46,10 +66,13 @@
                 <img src="imagens/linguagens.png" alt="Logotipo das linguagens HTML, CSS e JavaScript">
             </figure>
         </section>
+
         <section class="historia">
             <h2>História da Internet</h2>
             <iframe height="315" src="https://www.youtube.com/embed/jlkvzcG1UMk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
+
+
         <section class="localizacao">
             <h2>Localização</h2>
             <p>Rua Francisco Coimbra, 403 <br> 
@@ -60,9 +83,12 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1760433006248!2d-46.5424307217935!3d-23.526169866250964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e45de28bb23%3A0x1d2ed3122aae28a7!2sSenac%20Penha!5e0!3m2!1spt-BR!2sbr!4v1630497782246!5m2!1spt-BR!2sbr" height="450"  allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
+    <!-- Fim do área de conteúdo principal -->
+
     <footer>
         <p>Simplicity é um site fictício desenvolvido no Senac Penha &copy; - Alguns Direitos Reservados - 2022</p>
     </footer>
+
     <script src="js/menu.js"></script>
 </body>
 </html>
