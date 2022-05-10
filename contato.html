@@ -154,7 +154,39 @@
         <p>Simplicity é um site fictício desenvolvido no Senac Penha &copy; - Alguns Direitos Reservados - 2022</p>
     </footer>
     <script src="js/menu.js"></script>
-    <!-- Importando plugin lightbox -->
+    <!-- formspree js ajax -->
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Obrigado pelo envio!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Opa, tivemos um problema. Envie novamente."
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Opa, tivemos um problema. Envie novamente."
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 </html>
 
