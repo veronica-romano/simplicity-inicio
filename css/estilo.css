@@ -154,6 +154,26 @@ footer {
     background-color: whitesmoke;
     padding: 0.7 rem;
 }
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 80%;
+    margin: auto;
+    max-width: 700px;
+}
+th{
+    background-color: black;
+    color: #fff;
+}
+td{
+    background-color: #fff;
+}
+th, td{
+    width: 33%;
+    padding: 0.5 rem;
+}
 /* ------------------------------------------------------------- */
 /* Media queries */
 @media screen and (min-width: 600px) {
