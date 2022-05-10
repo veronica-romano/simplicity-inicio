@@ -205,7 +205,6 @@ caption{
     }
 
 }
-
 /* código que será interpretado apenas em telas 800px + */
 @media screen and (min-width: 800px) {
     html { 
